@@ -27,7 +27,7 @@ jobs:
       # This step will differ depending on your project setup
       # Fortunately, yarn has a built-in command for doing this!
       - name: Bump version in package.json
-        run: yarn version --new-version ${{ github.event.inputs.version }} --no-git-tag-version
+        run: npm version ${{ github.event.inputs.version }} --no-git-tag-version
 
       - name: Commit manifest files
         id: make-commit
@@ -41,7 +41,7 @@ jobs:
         run: git push origin release/${{ github.event.inputs.version }}
 
       - name: Create pull request
-        uses: thomaseizinger/create-pull-request@1.0.0
+        uses: thomaseizinger/create-pull-request@1.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
