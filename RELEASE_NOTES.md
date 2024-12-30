@@ -1,3 +1,3 @@
-### Change
+### Fix
 
--   Changes made to draft new release CI
+-   Fix Release notes 
