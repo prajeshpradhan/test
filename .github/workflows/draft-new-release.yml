@@ -29,10 +29,15 @@ jobs:
       - name: Bump version in package.json
         run: npm version ${{ github.event.inputs.version }} --no-git-tag-version
 
+      - name: Update Changelog
+        uses: thomaseizinger/keep-a-changelog-new-release@v1
+        with:
+          version: ${{ github.event.inputs.version }}        
+
       - name: Commit manifest files
         id: make-commit
         run: |
-          git add package.json
+          git add CHANGELOG.md package.json
           git commit --message "Prepare release ${{ github.event.inputs.version }}"
 
           echo "::set-output name=commit::$(git rev-parse HEAD)"
