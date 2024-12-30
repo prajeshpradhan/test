@@ -12,7 +12,7 @@ jobs:
     name: "Draft a new release"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Create release branch
         run: git checkout -b release/${{ github.event.inputs.version }}
@@ -30,9 +30,9 @@ jobs:
         run: npm version ${{ github.event.inputs.version }} --no-git-tag-version
 
       - name: Update Changelog
-        uses: thomaseizinger/keep-a-changelog-new-release@v1
+        uses: thomaseizinger/keep-a-changelog-new-release@v3
         with:
-          version: ${{ github.event.inputs.version }}        
+          tag: ${{ github.event.inputs.version }}        
 
       - name: Commit manifest files
         id: make-commit
