@@ -39,7 +39,7 @@ jobs:
         uses: ffurrer2/extract-release-notes@v2
 
       - name: Create Release
-        uses: thomaseizinger/create-release@2
+        uses: thomaseizinger/create-release@2.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
