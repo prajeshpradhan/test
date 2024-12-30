@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.7] - 2024-12-30
+
 ### Change
 
 -   Changes made to draft new release CI
@@ -35,7 +37,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Updated Changelog format
 
-[Unreleased]: https://github.com/prajeshpradhan/test/compare/2.0.6...HEAD
+[Unreleased]: https://github.com/prajeshpradhan/test/compare/2.0.7...HEAD
+
+[2.0.7]: https://github.com/prajeshpradhan/test/compare/2.0.6...2.0.7
 
 [2.0.6]: https://github.com/prajeshpradhan/test/compare/2.0.5...2.0.6
 
