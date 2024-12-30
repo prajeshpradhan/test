@@ -7,24 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.5] - 2024-12-30
+
 ### Change
 
--   Bump CI Actions versions
+- Bump CI Actions versions
 
 ## [2.0.4] - 2024-12-30
 
 ### Add
 
--   Add Checkout step in Releases CI
+- Add Checkout step in Releases CI
 
 ## [2.0.2] - 2024-12-30
 
 ### Change
 
--   Updated Changelog format
+- Updated Changelog format
 
-[Unreleased]: https://github.com/prajeshpradhan/test/compare/2.0.4...HEAD
-
+[unreleased]: https://github.com/prajeshpradhan/test/compare/2.0.5...HEAD
+[2.0.5]: https://github.com/prajeshpradhan/test/compare/2.0.4...2.0.5
 [2.0.4]: https://github.com/prajeshpradhan/test/compare/2.0.2...2.0.4
-
 [2.0.2]: https://github.com/prajeshpradhan/test/compare/ebbc4cb6a4452c7879cf2763a8d6c62dac66dead...2.0.2
