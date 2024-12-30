@@ -32,6 +32,10 @@ jobs:
 
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
 
+      - name: Extract release notes
+        id: extract-release-notes
+        uses: ffurrer2/extract-release-notes@v2
+
       - name: Create Release
         uses: thomaseizinger/create-release@1.0.0
         env:
@@ -40,6 +44,7 @@ jobs:
           target_commitish: ${{ github.event.pull_request.merge_commit_sha }}
           tag_name: ${{ env.RELEASE_VERSION }}
           name: ${{ env.RELEASE_VERSION }}
+          body: ${{ steps.extract_release_notes.outputs.release_notes }}
           draft: false
           prerelease: false
 
