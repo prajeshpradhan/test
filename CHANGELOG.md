@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.0.9] - 2025-01-08
+
+### Change
+
+-   Change the versioning format
+
 ## [2.0.8] - 2024-12-30
 
 ### Fix
@@ -43,7 +49,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Updated Changelog format
 
-[Unreleased]: https://github.com/prajeshpradhan/test/compare/2.0.8...HEAD
+[Unreleased]: https://github.com/prajeshpradhan/test/compare/v2.0.9...HEAD
+
+[v2.0.9]: https://github.com/prajeshpradhan/test/compare/2.0.8...v2.0.9
 
 [2.0.8]: https://github.com/prajeshpradhan/test/compare/2.0.7...2.0.8
 
